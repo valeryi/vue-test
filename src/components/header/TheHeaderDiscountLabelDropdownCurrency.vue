@@ -1,6 +1,7 @@
 <template>
     <the-header-discount-label-dropdown
         :buttonUnderlined="false"
+        :placement="$screen.lg ? `bottom-end` : null"
         fixPreventOverflow
         alignCenter
         class="discount-dropdown-currency"
