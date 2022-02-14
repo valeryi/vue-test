@@ -7,6 +7,7 @@
         :toggle-class="buttonUnderlined ? `discount-label-dropdown__toggle--underfined` : null"
         class="discount-label-dropdown"
         ref="dropdown"
+        tabindex="0"
         lazy
     >
         <template #button-content v-if="$slots['button-content']">
@@ -86,7 +87,7 @@ export default {
     },
     methods: {
         alignToRight() {
-            if (this.fixPreventOverflow) {
+            if (this.fixPreventOverflow && this.$screen.md && !this.$screen.lg) {
                 const dropdown = this.$refs['dropdown'].$el.querySelector(`.dropdown-menu`)
                 const rect = dropdown.getBoundingClientRect()
                 const elPos = rect.left + rect.width
