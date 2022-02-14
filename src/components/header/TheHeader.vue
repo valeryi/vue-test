@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-		<the-discount-label />
+		<the-header-discount-label />
 		<the-header-toolbar @toggleSidebar="toggleSidebar" />
 		<the-header-breadcrumb />
 	</header>
@@ -10,7 +10,7 @@
 import { mapMutations } from 'vuex'
 
 import TheHeaderToolbar from './TheHeaderToolbar'
-import TheDiscountLabel from '../TheDiscountLabel'
+import TheHeaderDiscountLabel from './TheHeaderDiscountLabel'
 import TheHeaderBreadcrumb from './TheHeaderBreadcrumb.vue'
 
 export default {
@@ -20,13 +20,9 @@ export default {
 		}),
 	},
 	components: {
-    TheHeaderToolbar,
-    TheDiscountLabel,
-    TheHeaderBreadcrumb
-},
+		TheHeaderToolbar,
+		TheHeaderDiscountLabel,
+		TheHeaderBreadcrumb
+	},
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

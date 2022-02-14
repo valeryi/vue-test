@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $transition-sidebar: transform 0.5s;
 
 .layout {
@@ -63,7 +63,6 @@ $transition-sidebar: transform 0.5s;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100vw;
-		height: 100vh;
 	}
 
 	&__content {
