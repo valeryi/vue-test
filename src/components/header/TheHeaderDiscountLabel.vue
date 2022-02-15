@@ -1,6 +1,6 @@
 <template>
 	<div class="header-discount">
-		<b-container :fluid="!this.$screen.xl">
+		<c-container>
 			<b-row md="12" class="justify-content-between">
 				<b-col
 					cols="12"
@@ -44,7 +44,7 @@
 					<lazy-the-header-discount-label-dropdown-currency fixPreventOverflow />
 				</b-col>
 			</b-row>
-		</b-container>
+		</c-container>
 	</div>
 </template>
 

@@ -54,7 +54,7 @@ export default {
                     'left',
                     'left-start',
                     'left-end',
-                ].includes(value)
+                ].indexOf(value) !== -1
             }
         },
     },
